@@ -1,4 +1,5 @@
 function Calculator () {
+
 	/****************** CALCULATOR ********************/
 
 	var body = document.body;
@@ -214,7 +215,7 @@ function Calculator () {
 		purpleClass.style.background = '#9A8FAD';
 	});
 
-	var style10 = reset.style;
+	style10 = reset.style;
 	style10.position = 'absolute';
 	style10.bottom = '10rem';
 	style10.width = '100vw';
@@ -240,7 +241,7 @@ function Calculator () {
 
 	zero.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '0';
 			} else {
 				numberOnDisplay = '0';
@@ -254,7 +255,7 @@ function Calculator () {
 
 	one.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '1';
 			} else {
 				numberOnDisplay = '1';
@@ -268,7 +269,7 @@ function Calculator () {
 
 	two.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '2';
 			} else {
 				numberOnDisplay = '2';
@@ -282,7 +283,7 @@ function Calculator () {
 
 	three.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '3';
 			} else {
 				numberOnDisplay = '3';
@@ -296,7 +297,7 @@ function Calculator () {
 
 	four.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '4';
 			} else {
 				numberOnDisplay = '4';
@@ -310,7 +311,7 @@ function Calculator () {
 
 	five.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '5';
 			} else {
 				numberOnDisplay = '5';
@@ -324,7 +325,7 @@ function Calculator () {
 
 	six.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '6';
 			} else {
 				numberOnDisplay = '6';
@@ -338,7 +339,7 @@ function Calculator () {
 
 	seven.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '7';
 			} else {
 				numberOnDisplay = '7';
@@ -352,7 +353,7 @@ function Calculator () {
 
 	eight.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '8';
 			} else {
 				numberOnDisplay = '8';
@@ -366,7 +367,7 @@ function Calculator () {
 
 	nine.addEventListener('click', function () {
 		if (numberOfCount == 0) {
-			if (numberOnDisplay != '0' && fromBeginning != true) {
+			if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 				numberDisplay.innerHTML = numberDisplay.innerHTML + '9';
 			} else {
 				numberOnDisplay = '9';
@@ -559,7 +560,7 @@ function Calculator () {
 		switch (x) {
 			case 96:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '0';
 					} else {
 						numberOnDisplay = '0';
@@ -572,7 +573,7 @@ function Calculator () {
 				break;
 			case 97:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '1';
 					} else {
 						numberOnDisplay = '1';
@@ -585,7 +586,7 @@ function Calculator () {
 				break;
 			case 98:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '2';
 					} else {
 						numberOnDisplay = '2';
@@ -598,7 +599,7 @@ function Calculator () {
 				break;
 			case 99:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '3';
 					} else {
 						numberOnDisplay = '3';
@@ -611,7 +612,7 @@ function Calculator () {
 				break;
 			case 100:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '4';
 					} else {
 						numberOnDisplay = '4';
@@ -624,7 +625,7 @@ function Calculator () {
 				break;
 			case 101:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '5';
 					} else {
 						numberOnDisplay = '5';
@@ -637,7 +638,7 @@ function Calculator () {
 				break;
 			case 102:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '6';
 					} else {
 						numberOnDisplay = '6';
@@ -650,7 +651,7 @@ function Calculator () {
 				break;
 			case 103:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '7';
 					} else {
 						numberOnDisplay = '7';
@@ -663,7 +664,7 @@ function Calculator () {
 				break;
 			case 104:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '8';
 					} else {
 						numberOnDisplay = '8';
@@ -676,7 +677,7 @@ function Calculator () {
 				break;
 			case 105:
 				if (numberOfCount == 0) {
-					if (numberOnDisplay != '0' && fromBeginning != true) {
+					if (numberDisplay.innerHTML != '0' && fromBeginning != true) {
 						numberDisplay.innerHTML = numberDisplay.innerHTML + '9';
 					} else {
 						numberOnDisplay = '9';
@@ -939,6 +940,7 @@ function Calculator () {
         numbers = [];
 		theOperators = [];
 		indexesOfOperators = [];
+		numberOfCount = 0;
     })
 }
 
