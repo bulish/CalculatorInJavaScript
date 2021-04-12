@@ -939,7 +939,3 @@ function Calculator () {
 }
 
 window.addEventListener('load', Calculator);
-
-// TODO:
-// nejde napsat jako prvni cislo 0.5
-// kdyz numberOfCount neni 0, blbne to
