@@ -233,7 +233,7 @@ function Calculator () {
 		style10.fontSize = '1.5rem';
 	});
 
-	/*********************** CLICKING *************************/
+	/************************ CLICKING **************************/
 
 	var numberOfCount = 0;
 	var fromBeginning = false;
