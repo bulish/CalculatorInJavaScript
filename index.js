@@ -512,23 +512,21 @@ function Calculator () {
 	});
 
 	dot.addEventListener('click', function () {
-		if (numberOnDisplay != '0') {
-			if (
-				numberDisplay.innerHTML.lastIndexOf('+') >
-					numberDisplay.innerHTML.lastIndexOf('.') ||
-				numberDisplay.innerHTML.lastIndexOf('-') >
-					numberDisplay.innerHTML.lastIndexOf('.') ||
-				numberDisplay.innerHTML.lastIndexOf('*') >
-					numberDisplay.innerHTML.lastIndexOf('.') ||
-				numberDisplay.innerHTML.lastIndexOf('/') >
-					numberDisplay.innerHTML.lastIndexOf('.') ||
-				numberDisplay.innerHTML.indexOf('.') == -1
-			) {
-				numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
-			}
+		if (
+			numberDisplay.innerHTML.lastIndexOf('+') >
+				numberDisplay.innerHTML.lastIndexOf('.') ||
+			numberDisplay.innerHTML.lastIndexOf('-') >
+				numberDisplay.innerHTML.lastIndexOf('.') ||
+			numberDisplay.innerHTML.lastIndexOf('*') >
+				numberDisplay.innerHTML.lastIndexOf('.') ||
+			numberDisplay.innerHTML.lastIndexOf('/') >
+				numberDisplay.innerHTML.lastIndexOf('.') ||
+			numberDisplay.innerHTML.indexOf('.') == -1
+		) {
+			numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
 		} else {
-			numberDisplay.innerHTML = numberOnDisplay;
-		}
+			numberDisplay.innerHTML = numberDisplay.innerHTML;
+		}	 
 	});
 
 	equals.addEventListener('click', function () {
@@ -785,41 +783,37 @@ function Calculator () {
 				}
 				break;
 			case 110:
-				if (numberOnDisplay != '0') {
-					if (
-						numberDisplay.innerHTML.lastIndexOf('+') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('-') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('*') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('/') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.indexOf('.') == -1
-					) {
-						numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
-					}
+				if (
+					numberDisplay.innerHTML.lastIndexOf('+') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('-') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('*') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('/') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.indexOf('.') == -1
+				) {
+					numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
 				} else {
-					numberDisplay.innerHTML = numberOnDisplay;
+					numberDisplay.innerHTML = numberDisplay.innerHTML;
 				}
 				break;
 			case 190:
-				if (numberOnDisplay != '0') {
-					if (
-						numberDisplay.innerHTML.lastIndexOf('+') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('-') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('*') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.lastIndexOf('/') >
-							numberDisplay.innerHTML.lastIndexOf('.') ||
-						numberDisplay.innerHTML.indexOf('.') == -1
-					) {
-						numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
-					}
+				if (
+					numberDisplay.innerHTML.lastIndexOf('+') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('-') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('*') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.lastIndexOf('/') >
+						numberDisplay.innerHTML.lastIndexOf('.') ||
+					numberDisplay.innerHTML.indexOf('.') == -1
+				) {
+					numberDisplay.innerHTML = numberDisplay.innerHTML + '.';
 				} else {
-					numberDisplay.innerHTML = numberOnDisplay;
+					numberDisplay.innerHTML = numberDisplay.innerHTML;
 				}
 				break;
 			case 111:
@@ -945,3 +939,7 @@ function Calculator () {
 }
 
 window.addEventListener('load', Calculator);
+
+// TODO:
+// nejde napsat jako prvni cislo 0.5
+// kdyz numberOfCount neni 0, blbne to
