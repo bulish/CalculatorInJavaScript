@@ -49,7 +49,7 @@ function Calculator () {
 	var dividedBy = document.createElement('div');
 	dividedBy.innerHTML = '/';
 	numbersArray[3].appendChild(dividedBy);
-	dividedBy.classList = 'pink';
+	dividedBy.classList = 'dark';
 
 	var four = document.createElement('div');
 	four.innerHTML = '4';
@@ -69,7 +69,7 @@ function Calculator () {
 	var times = document.createElement('div');
 	times.innerHTML = '*';
 	numbersArray[7].appendChild(times);
-	times.classList = 'pink';
+	times.classList = 'dark';
 
 	var one = document.createElement('div');
 	one.innerHTML = '1';
@@ -89,7 +89,7 @@ function Calculator () {
 	var minus = document.createElement('div');
 	minus.innerHTML = '-';
 	numbersArray[11].appendChild(minus);
-	minus.classList = 'pink';
+	minus.classList = 'dark';
 
 	var zero = document.createElement('div');
 	zero.innerHTML = '0';
@@ -104,12 +104,12 @@ function Calculator () {
 	var plus = document.createElement('div');
 	plus.innerHTML = '+';
 	numbersArray[14].appendChild(plus);
-	plus.classList = 'pink';
+	plus.classList = 'dark';
 
 	var equals = document.createElement('div');
 	equals.innerHTML = '=';
 	numbersArray[15].appendChild(equals);
-	equals.classList = 'purple';
+	equals.classList = 'red';
 
 	/*********************** STYLES *************************/
 
@@ -123,7 +123,7 @@ function Calculator () {
 	style1.width = '100vw';
 	style1.height = '100vh';
 	style1.position = 'relative';
-	style1.background = '#FDF7FF';
+	style1.background = '#141313';
 
 	////// title //////
 
@@ -132,7 +132,7 @@ function Calculator () {
 	style2.fontSize = '3rem';
 	style2.textAlign = 'center';
 	style2.paddingTop = '2rem';
-	style2.color = '#4A4453';
+	style2.color = '#c6c2cc';
 	style2.fontFamily = "'PT Sans', sans-serif";
 
 	////// container //////
@@ -143,12 +143,13 @@ function Calculator () {
 	style3.top = '50%';
 	style3.left = '50%';
 	style3.transform = 'translate(-50%, -50%)';
-	style3.border = '1px solid #4A4453';
 	style3.width = '50vw';
+	style3.borderRadius = '0.75rem';
 	style3.fontSize = '1.5rem';
 	style3.background = 'white';
 	style3.textAlign = 'center';
 	style3.padding = '1rem';
+	style3.background = '#2F3332';
 
 	////// display //////
 
@@ -156,9 +157,12 @@ function Calculator () {
 	style4.padding = '1rem';
 
 	style5 = numberDisplay.style;
-	style5.border = '1px solid #946E91';
+	style5.background= '#444645';
 	style5.textAlign = 'right';
-	style5.paddingRight = '0.5rem';
+	style5.paddingRight = '0.8rem';
+	style5.paddingTop = '0.2rem';
+	style5.paddingBottom = '0.2rem';
+	style5.color = "white";
 
 	////// numbers and operators //////
 
@@ -174,45 +178,48 @@ function Calculator () {
 
 	for (let i = 0; i < greyClass.length; i++) {
 		style7 = greyClass[i].style;
-		style7.background = '#979DB0';
+		style7.background = '#b3b6be';
 		style7.padding = '0.5rem';
+		style7.borderRadius = "0.75rem";
 
 		greyClass[i].addEventListener('mouseenter', function () {
 			greyClass[i].style.background = '#7990A3';
 		});
 
 		greyClass[i].addEventListener('mouseleave', function () {
-			greyClass[i].style.background = '#979DB0';
+			greyClass[i].style.background = '#b3b6be';
 		});
 	}
 
-	var pinkClass = document.querySelectorAll('.pink');
+	var darkClass = document.querySelectorAll('.dark');
 
-	for (let i = 0; i < pinkClass.length; i++) {
-		style8 = pinkClass[i].style;
-		style8.background = '#D6B1C9';
+	for (let i = 0; i < darkClass.length; i++) {
+		style8 = darkClass[i].style;
+		style8.background = '#6e6b6e';
 		style8.padding = '0.5rem';
+		style8.borderRadius = '0.75rem';
 
-		pinkClass[i].addEventListener('mouseenter', function () {
-			pinkClass[i].style.background = '#B9A6B2';
+		darkClass[i].addEventListener('mouseenter', function () {
+			darkClass[i].style.background = '#888888';
 		});
 
-		pinkClass[i].addEventListener('mouseleave', function () {
-			pinkClass[i].style.background = '#D6B1C9';
+		darkClass[i].addEventListener('mouseleave', function () {
+			darkClass[i].style.background = '#6e6b6e';
 		});
 	}
 
-	var purpleClass = document.querySelector('.purple');
-	style9 = purpleClass.style;
-	style9.background = '#9A8FAD';
+	var redClass = document.querySelector('.red');
+	style9 = redClass.style;
+	style9.background = '#FF2A2A';
 	style9.padding = '0.5rem';
+	style9.borderRadius = '0.75rem';
 
-	purpleClass.addEventListener('mouseenter', function () {
-		purpleClass.style.background = '#8578A4';
+	redClass.addEventListener('mouseenter', function () {
+		redClass.style.background = '#df3939';
 	});
 
-	purpleClass.addEventListener('mouseleave', function () {
-		purpleClass.style.background = '#9A8FAD';
+	redClass.addEventListener('mouseleave', function () {
+		redClass.style.background = '#FF2A2A';
 	});
 
 	style10 = reset.style;
@@ -221,7 +228,7 @@ function Calculator () {
 	style10.width = '100vw';
 	style10.textAlign = 'center';
 	style10.fontSize = '1.5rem';
-	style10.color = '#4A4453';
+	style10.color = '#ada9b4';
 	style10.fontFamily = "'PT Sans', sans-serif";
 
 	reset.addEventListener('mouseenter', function () {
